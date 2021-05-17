@@ -1,7 +1,6 @@
 #include<iostream>
 #include<vector>
 #include<map>
-#include<unordered_map>
 #include<algorithm>
 using namespace std;
 
@@ -9,7 +8,7 @@ const int SIZE = 1 << 18;
 const int len = 1 << 17;
 vector<pair<pair<pair<int, int>, pair<int, int>>, pair<int, int>>> v;
 map<int, int> m;
-unordered_map<int, int> rm;
+int rm[SIZE];
 long long tree[SIZE];
 long long subtree[SIZE];
 long long lazy[SIZE];
